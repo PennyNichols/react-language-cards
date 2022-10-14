@@ -1,24 +1,38 @@
 import React, {useState} from 'react'
-import {Card} from 'react-bootstrap'
 
-const LanguageCards = (props) => {
-  return (
-    <div className='card-wrapper'>
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={props.img} />
-            <Card.Body>
-                <Card.Title>{props.name}</Card.Title>
-            </Card.Body>
-        </Card>
+import Cards from '../Card/Cards'
 
-        <Card style={{ width: '18rem' }}>
-            <Card.Body>
-                <Card.Text>{props.options}</Card.Text>
-            </Card.Body>
-        </Card>
+const LanguageCards = () => {
+    
+        return(
+                <Cards/>
+            
+        )
         
-    </div>
-  )
+
+    // const renderCards = (props, index)=>{
+    //     return (
+    //         <div className='flippable-card-container' key='index'>
+    //                 <Card style={{ width: '18rem' }}>
+    //                     <Card.Img variant="top" src={props.img} />
+    //                     <Card.Body>
+    //                         <Card.Title>{props.name}</Card.Title>
+    //                     </Card.Body>
+    //                 </Card>
+                
+    //             <Card style={{ width: '18rem' }}>
+    //                 <Card.Body>
+    //                     <Card.Text>{props.options}</Card.Text>
+    //                 </Card.Body>
+    //             </Card>
+                
+                
+    //         </div>
+    //     )
+    // }
+    // return(
+    //     <div className="flex">{languages.map(renderCards)}</div>
+    // )
 }
 
 export default LanguageCards
